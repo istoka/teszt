@@ -1,6 +1,3 @@
-var link = document.getElementById('getNumber'); // Gets the link
-link.onclick = getNumber; // Runs the function on click
-
 function getNumber() {
     var minNumber = 0; // The minimum number you want
     var maxNumber = 100; // The maximum number you want
