@@ -8,11 +8,14 @@
 </head>
   
 <body>
+  <h2>JavaScript Random Number</h2>
+  <p id="random_number"></p>
+  
     <h2>Random String Generator</h2>
     <h4 id="target"></h4>
     <input id="strlength" type="number" value="5" min="1" max="100" />
     <button id="gen" onClick="generate()">Generate</button>
-    <button id="gen2" onClick="getNumber()">Generate Number</button>
+    <button id="gen2" onClick="getRndInteger(minimum, maximum)">Generate Number</button>
   
     <script>
     function generate() {
@@ -28,15 +31,11 @@
     }
     </script>
   
+  <script>
+    function getRndInteger(minimum, maximum) {
+    return Math.floor(Math.random() * (maximum - minimum)) + minimum;
+    }
+      document.getElementById("random_number").innerHTML = getRndInteger(10, 20);
+</script>
   
-    <script>
-
-  function getNumber() {
-    var minNumber = 0; // The minimum number you want
-    var maxNumber = 100; // The maximum number you want
-    var randomnumber = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // Generates random number
-    $('#myNumber').html(randomnumber); // Sets content of <div> to number
-    return false; // Returns false just to tidy everything up
-}
-    </script>
 </body>
