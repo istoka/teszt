@@ -30,8 +30,6 @@
   
   
     <script>
-    var link = document.getElementById('getNumber'); // Gets the link
-    link.onclick = getNumber; // Runs the function on click
 
   function getNumber() {
     var minNumber = 0; // The minimum number you want
@@ -40,5 +38,7 @@
     $('#myNumber').html(randomnumber); // Sets content of <div> to number
     return false; // Returns false just to tidy everything up
 }
+      document.getElementById("target").innerHTML = result
+          }
     </script>
 </body>
