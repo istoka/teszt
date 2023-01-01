@@ -50,5 +50,20 @@
   <p> Véletlenszám:</p> 
   <p id="GFG"> </p>
 
+  
+  <form name="rn">
+    <input type="text" id="tb" name="tb" /><br>
+    <input type="button" value="Random" onclick="doFunction(Random);" />
+</form>
+<script>
+    function Random() {
+    
+        return Math.floor(Math.random() * 100);
+    }
+		function doFunction(){
+    document.getElementById('tb').value = Random()
+    }
+</script>
+  
 
 </body>
