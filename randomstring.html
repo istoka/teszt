@@ -16,7 +16,8 @@
   
     <input id="strlength" type="number" value="8" min="1" max="100" />
     <button id="gen" onClick="generate()">Generate String</button>
-    <button onclick="document.getElementById('GFG').innerHTML = getRndInteger(0, 10)">Véletlen Szám</button>
+  <button id="gen2" onClick="getRndInteger(min, max)">Generate String</button>
+    <button onclick="document.getElementById('GFG').innerHTML = getRndInteger(0, 100)">Véletlen Szám</button>
     
   <script>
     function generate() {
@@ -41,6 +42,7 @@
         function getRndInteger(min, max) {
             return Math.floor(Math.random() * (max - min)) + min;
         }
+      document.getElementById("gen2").innerHTML = result
     </script>
 
    <p> VéletlenString: </p>
