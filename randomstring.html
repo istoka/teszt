@@ -14,12 +14,12 @@
     <h2>Random String Generator</h2>
     <h4 id="target"></h4>
     <p id="random_number"></p>
-    <p id="GFG"></p>
+  
   
     <input id="strlength" type="number" value="8" min="1" max="100" />
-    <button id="gen" onClick="generate()">Generate</button>
-    <p></p>
-    <button id="GFG" onClick="getRndInteger()">Generate Number</button>
+    <button id="gen" onClick="generate()">Generate String</button>
+  
+    <button id="gen2" onClick="getRndInteger()">Generate Number</button>
   
     <script>
     function generate() {
@@ -47,5 +47,6 @@
             return Math.floor(Math.random() * (max - min)) + min;
         }
     </script>
+  <p id="GFG"></p>
   
 </body>
